@@ -1,3 +1,6 @@
-user k1aro_org
-dc o00_.
-discord.gg/
+dc:
+o00_.
+--//--
+server:
+https://discord.gg/ZMrT7CNMqj
+--//--
