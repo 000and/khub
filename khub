@@ -215,7 +215,7 @@ DevScripts:CreateButton("Remote Spy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
 end)
 
-DevScripts:CreateButton("Remote Spy V2", function()
+DevScripts:CreateButton("Remote Spy V2", function(args, speaker)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
 end)
 
