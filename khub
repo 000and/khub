@@ -45,8 +45,6 @@ end;
 
 
 
-
-
 function CframeGen()
     local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local o = string.format("%d, %d, %d", pos.X + 0.5, pos.Y + 0.5, pos.Z + 0.5)
@@ -65,8 +63,6 @@ function ClickDet()
         end
     end) 
 end
-
-
 
 
 function proximy()
@@ -109,13 +105,12 @@ local Universalscripts = JanelaPrincipalDeScripts:NewSection("Universal")
 
 local UGCscripts = JanelaPrincipalDeScripts:NewSection("UGC")
 
-local AreaDoCriador = JanelaPrincipalDeScripts:NewSection("Dev")
+local DevScripts = JanelaPrincipalDeScripts:NewSection("Dev")
 
 local Firing = JanelaPrincipalDeScripts:NewSection("Fire")
 
 local Creditos = JanelaPrincipalDeScripts:NewSection("UI / Créditos")
 
-    -- iy
 Universalscripts:CreateButton("infinity Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
@@ -211,20 +206,22 @@ end)
 Firing:CreateButton("Proximity Prompt", function()
     proximy()
 end)
-
---
----
----
-AreaDoCriador:CreateButton("ikura hub", function()
+DevScripts:CreateButton("ikura hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
 end)
 -- rspy
-AreaDoCriador:CreateButton("Remote Spy", function()
+
+DevScripts:CreateButton("Remote Spy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
 end)
+
+DevScripts:CreateButton("Remote Spy V2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
+end)
+
 --tc
 
-AreaDoCriador:CreateButton("Tween Create", function()
+DevScripts:CreateButton("Tween Create", function()
    
     local po = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
  local x, y, z = math.floor(po.X), math.floor(po.Y), math.floor(po.Z)
@@ -238,7 +235,7 @@ AreaDoCriador:CreateButton("Tween Create", function()
  setclipboard(twn)
   Notify("Copiado!", 3)
  end)
-AreaDoCriador:CreateButton("Teleport Create", function() 
+DevScripts:CreateButton("Teleport Create", function() 
     CframeGen()
    if V10 then
      Sound(6150774030, 0.1)
@@ -249,7 +246,7 @@ AreaDoCriador:CreateButton("Teleport Create", function()
    end ;
  end) ;
 --Hydroxide
-AreaDoCriador:CreateButton("Hydroxide Mobile", function() 
+DevScripts:CreateButton("Hydroxide Mobile", function() 
     local owner = "Hosvile"
     local branch = "revision"
     
@@ -259,15 +256,16 @@ AreaDoCriador:CreateButton("Hydroxide Mobile", function()
     webImport("init") ;
     webImport("ui/main") ;
 end)
---créditos
---créditos
 
+Creditos:CreateButton("Copiar meu dc", function()
+    setclipboard("o00_.")
+end)
 
 Creditos:CreateButton("Server do discord", function()
     setclipboard("https://discord.gg/ZMrT7CNMqj")
 end)
 
-Creditos:CreateButton("kura/StopExploting", function()
+Creditos:CreateButton("JustAScripts/UniversalScript/Ikura/StopExploting", function()
     print("me ajudou em notify/tweencreate")
 end)
 
