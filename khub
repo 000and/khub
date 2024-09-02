@@ -170,7 +170,7 @@ UGCscripts:CreateButton("Wyverd(Wyvern leaker)", function()
 end)
 
  UGCscripts:CreateButton("Wynerd V2(alwi)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/wynerdV2.lua", true))()
+    loadstring(game:HttpGet("https://boykisser.army/p/raw/pl6mjl4xoy", true))()
 end)
         
 
