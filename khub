@@ -99,7 +99,7 @@ end
 
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
-local JanelaPrincipalDeScripts = Library:NewWindow("Khub P2")
+local JanelaPrincipalDeScripts = Library:NewWindow("Khub")
 
 local Universalscripts = JanelaPrincipalDeScripts:NewSection("Universal")
 
