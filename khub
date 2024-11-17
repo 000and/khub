@@ -115,13 +115,6 @@ Universalscripts:CreateButton("infinity Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
 
-
---dexv2
-Universalscripts:CreateButton("Dex(v2 FE, notworking)", function()
-    loadstring(game:HttpGet("https://gist.githubusercontent.com/TeknosQuet/5dbf811bcae428f29247fb7dfec0db0c/raw/c41e7dcabe47bcd0df9c9426ea542c43c63cc65d/dexV2.lua"))()
-end)
-
---another dex naosei pq
 Universalscripts:CreateButton("Dex WeAreDevs(White)", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 end)
@@ -165,7 +158,7 @@ end)
 --ugc
 --ugc
 -- wynerd
-UGCscripts:CreateButton("Wyverd(Wyvern leaker)", function()
+UGCscripts:CreateButton("Wyvern(Wyvern leaker)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wyvernleaker/WYVERN/main/WYVERN.lua", true))()
 end)
 
@@ -173,7 +166,6 @@ end)
     loadstring(game:HttpGet("https://boykisser.army/p/raw/pl6mjl4xoy", true))()
 end)
         
-
 --V2 Player Hub
 UGCscripts:CreateButton("V2 Player Hub", function() 
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/PlayerHubIngameUgcLimitedsV2.lua')))()
@@ -191,9 +183,7 @@ end)
 
 ---fire
 ---fire
---fire]
-
-
+--fire
 
 Firing:CreateButton("TouchInterests", function()
     Touchinterest()
@@ -206,17 +196,9 @@ end)
 Firing:CreateButton("Proximity Prompt", function()
     proximy()
 end)
-DevScripts:CreateButton("ikura hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
-end)
--- rspy
 
 DevScripts:CreateButton("Remote Spy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
-end)
-
-DevScripts:CreateButton("Remote Spy V2", function(args, speaker)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
 end)
 
 --tc
@@ -257,18 +239,7 @@ DevScripts:CreateButton("Hydroxide Mobile", function()
     webImport("ui/main") ;
 end)
 
-Creditos:CreateButton("Copiar meu dc", function()
-    setclipboard("o00_.")
-end)
 
-Creditos:CreateButton("Server do discord", function()
-    setclipboard("https://discord.gg/ZMrT7CNMqj")
-end)
-
-Creditos:CreateButton("JustAScripts/UniversalScript/Ikura/StopExploting", function()
-    print("me ajudou em notify/tweencreate")
-end)
-
-Creditos:CreateButton("Deletar GUI", function()
+Creditos:CreateButton("Delete library", function()
     game.CoreGui.WizardLibrary:Destroy()
 end)
