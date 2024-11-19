@@ -109,7 +109,7 @@ local DevScripts = JanelaPrincipalDeScripts:NewSection("Dev")
 
 local Firing = JanelaPrincipalDeScripts:NewSection("Fire")
 
-local Creditos = JanelaPrincipalDeScripts:NewSection("UI / Créditos")
+local Creditos = JanelaPrincipalDeScripts:NewSection("UI")
 
 Universalscripts:CreateButton("infinity Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
@@ -119,7 +119,6 @@ Universalscripts:CreateButton("Dex WeAreDevs(White)", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 end)
 
--- dexv3
 Universalscripts:CreateButton("Dex(New v3)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))()
 end)
@@ -130,8 +129,6 @@ Universalscripts:CreateButton("Rejoin", function()
     ts:Teleport(game.PlaceId, p)
 end)
 
-
--- anti afk
 Universalscripts:CreateButton("Anti AFK", function()
 while not game:IsLoaded() do wait() end
 repeat wait() until game.Players.LocalPlayer.Character
@@ -149,21 +146,11 @@ Players.LocalPlayer.Idled:Connect(function()
     VirtualUser:ClickButton2(Vector2.new())
 end)
 end
-game.StarterGui:SetCore('SendNotification', { Title = 'Anti afk ligado'; Text = 'anti afk ligado'; })
 end)
 
 
-
-
---ugc
---ugc
--- wynerd
-UGCscripts:CreateButton("Wyvern(Wyvern leaker)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/wyvernleaker/WYVERN/main/WYVERN.lua", true))()
-end)
-
- UGCscripts:CreateButton("Wynerd V2(alwi)", function()
-    loadstring(game:HttpGet("https://boykisser.army/p/raw/pl6mjl4xoy", true))()
+ UGCscripts:CreateButton("Wycat", function()
+    loadstring(game:HttpGet("https://raw.github.com/000and/wycat/main/wycat.lua", true))
 end)
         
 --V2 Player Hub
@@ -198,7 +185,7 @@ Firing:CreateButton("Proximity Prompt", function()
 end)
 
 DevScripts:CreateButton("Remote Spy", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/f68389ccee5b0a308b2a59f489e983684122a7dd/Tools/SimpleSpyMobile.lua"))()
 end)
 
 --tc
