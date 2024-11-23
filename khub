@@ -149,8 +149,8 @@ end
 end)
 
 
- UGCscripts:CreateButton("Wycat", function()
-    loadstring(game:HttpGet("https://raw.github.com/000and/wycat/main/wycat.lua", true))
+ UGCscripts:CreateButton("Wyborn", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/main/wyborn",true))()
 end)
         
 --V2 Player Hub
